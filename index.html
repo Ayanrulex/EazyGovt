@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EazyGovt — Government services, made easy.</title>
+  <meta name="description" content="EazyGovt helps citizens discover and understand Indian government services and reach official portals.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="independent-banner">Independent platform · Government requirements and final decisions always belong to the official portal.</div>
+  <header class="topbar" role="banner">
+    <a class="brand" href="#"><img src="assets/logo.svg" alt="EazyGovt"></a>
+    <nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#categories">Categories</a>
+      <a href="#states">States</a>
+      <a href="#about">About</a>
+      <a href="#help">Help</a>
+    </nav>
+    <div class="actions">
+      <button class="location" id="locationBtn">📍 Delhi ▾</button><button class="location language" id="languageBtn">EN ▾</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+      <button class="btn secondary" id="loginBtn">Login</button>
+      <button class="btn primary" id="signupBtn">Sign Up</button>
+    </div>
+    <button class="menu" id="menuBtn">☰</button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>✓</span> Verified government service discovery</div>
+        <h1>Government Services,<br><span>Made Easy.</span></h1>
+        <p>Find, understand and reach the right official government portal for your needs — in one simple place.</p>
+        <div class="searchbox">
+          <span>⌕</span>
+          <input id="searchInput" placeholder="e.g. Driving licence, PAN card, Passport, Income certificate..." autocomplete="off">
+          <button id="searchBtn">Search</button>
+        </div>
+        <div class="suggestions"><span>Try:</span>
+          <button data-query="Driving Licence">Driving Licence</button>
+          <button data-query="PAN Card">PAN Card</button>
+          <button data-query="Passport">Passport</button>
+          <button data-query="Income Certificate">Income Certificate</button>
+        </div>
+        <div class="trust-row">
+          <div><b>🛡️ Verified links</b><small>Official portals only</small></div>
+          <div><b>🤖 AI assistant</b><small>Guided help</small></div>
+          <div><b>🗺️ State-aware</b><small>Central + State</small></div>
+          <div><b>📍 Find offices</b><small>Nearby locations</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <div class="india-gate">🇮🇳</div>
+        <div class="citizen">🧑🏻</div>
+        <div class="phone">✓<small>EazyGovt</small></div>
+        <div class="float-card one">🚗 <b>Driving Licence</b><small>Official portal →</small></div>
+        <div class="float-card two">🪪 <b>PAN Card</b><small>Apply / Update →</small></div>
+        <div class="float-card three">📄 <b>Income Certificate</b><small>Check requirements →</small></div>
+      </div>
+      <aside class="ai-card">
+        <div class="ai-head"><span class="bot">●</span><div><b>Meet your AI Assistant</b><small>Ask about government services</small></div></div>
+        <div class="chat">
+          <div class="bubble user">I want to renew my driving licence.</div>
+          <div class="bubble bot-bubble">Sure. I can help with that.<br>Which state are you applying in?</div>
+          <div class="state-pills"><button>Delhi</button><button>Maharashtra</button><button>Karnataka</button></div>
+        </div>
+        <button class="wide primary" id="chatBtn">💬 Start Chatting</button>
+      </aside>
+    </section>
+
+    <section class="stats">
+      <div><span>📑</span><b>Service catalogue</b><strong>Growing</strong></div>
+      <div><span>🇮🇳</span><b>States & UTs</b><strong>36</strong></div>
+      <div><span>✓</span><b>Source policy</b><strong>Official-first</strong></div>
+      <div><span>🤖</span><b>AI guidance</b><strong>Coming soon</strong></div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-title"><div><span class="kicker">START HERE</span><h2>Popular Services</h2><p>Common services citizens search for every day.</p></div><button class="outline">View all →</button></div>
+      <div class="service-grid" id="serviceGrid"></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-title"><div><span class="kicker">EXPLORE</span><h2>Browse by Category</h2><p>Find services by sector and area.</p></div></div>
+      <div class="category-grid">
+        <button>🪪 <b>Identity & Documents</b><small>Aadhaar, PAN, Voter ID</small></button>
+        <button>🚗 <b>Transport</b><small>Driving licence, Vehicle</small></button>
+        <button>📋 <b>Certificates</b><small>Birth, Income, Caste</small></button>
+        <button>💼 <b>Business & Licences</b><small>GST, Udyam, Trade</small></button>
+        <button>🎓 <b>Education</b><small>Scholarships, Exams</small></button>
+        <button>🩺 <b>Health & Welfare</b><small>Health schemes, benefits</small></button>
+        <button>💰 <b>Tax & Finance</b><small>Income Tax, GST</small></button>
+        <button>🏠 <b>Property & Land</b><small>Land records, registration</small></button>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div><span class="kicker">WHY EAZY GOVT?</span><h2>Less searching.<br>More certainty.</h2><p>One place to understand what you need, where to go and what to do next.</p><button class="btn primary" id="exploreBtn">Explore services →</button></div>
+      <div class="feature-list">
+        <div>🛡️ <b>Official-source first</b><small>We prioritize verified government portals.</small></div>
+        <div>🤖 <b>AI-powered guidance</b><small>Ask questions in normal language.</small></div>
+        <div>📍 <b>Location-aware</b><small>Surface state-specific services and offices.</small></div>
+        <div>📄 <b>Document checklist</b><small>See requirements before visiting a portal.</small></div>
+      </div>
+    </section>
+
+    <section class="section two-col" id="states">
+      <div class="map-card">
+        <div class="map-pattern"></div>
+        <div class="map-pin p1">📍</div><div class="map-pin p2">📍</div><div class="map-pin p3">📍</div>
+        <div class="map-info"><span class="kicker">LOCATION</span><h2>Find government offices near you</h2><p>RTOs, passport offices, CSCs and other relevant facilities.</p><button class="btn primary" id="mapBtn">Open map search →</button></div>
+      </div>
+      <div class="steps">
+        <span class="kicker">HOW IT WORKS</span><h2>From question to official portal.</h2>
+        <div class="step"><b>01</b><div><strong>Search</strong><small>Tell us what government work you need to do.</small></div></div>
+        <div class="step"><b>02</b><div><strong>Get a guide</strong><small>See eligibility, documents and process.</small></div></div>
+        <div class="step"><b>03</b><div><strong>Visit official portal</strong><small>Use the verified government link.</small></div></div>
+        <div class="step"><b>04</b><div><strong>Track & return</strong><small>Save services and revisit your guidance.</small></div></div>
+      </div>
+    </section>
+
+    <section class="cta" id="about">
+      <div><span class="kicker">COMING NEXT</span><h2>Your government-service companion.</h2><p>Save services, get reminders and use EazyGovt AI whenever you need help.</p></div>
+      <div class="cta-actions"><button class="btn primary" id="ctaSignup">Create free account</button><button class="btn secondary" id="missingBtn">Suggest a service</button></div>
+    </section>
+  </main>
+
+
+    <section class="source-section" id="source-policy">
+      <div><span class="kicker">TRUST & VERIFICATION</span><h2>Official source first.</h2><p>EazyGovt is designed to help citizens discover and understand services. Before a service is published as verified, its official department, portal, requirements and applicability will be checked and recorded.</p></div>
+      <div class="source-links">
+        <a href="https://www.india.gov.in/services" target="_blank" rel="noopener noreferrer">India.gov.in — Services ↗</a>
+        <a href="https://www.india.gov.in/directory/web-directory" target="_blank" rel="noopener noreferrer">India.gov.in — Web Directory ↗</a>
+      </div>
+    </section>
+
+  <footer id="help">
+    <div class="footer-main">
+      <img src="assets/logo.svg" alt="EazyGovt">
+      <p><strong>EazyGovt is an independent information and guidance platform.</strong><br>It is not a government website, is not affiliated with a government department, and does not submit applications on a citizen’s behalf.</p>
+      <div><b>Explore</b><a href="#services">Services</a><a href="#categories">Categories</a><a href="#states">States & UTs</a><a href="#source-policy">Source policy</a></div>
+      <div><b>Support</b><a href="#">Help centre</a><a href="#">Contact</a><a href="#">Report a link</a></div>
+      <div><b>Legal</b><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclaimer</a></div>
+    </div>
+    <div class="official">Reference starting points: <a href="https://www.india.gov.in/services" target="_blank" rel="noopener">India.gov.in Services</a> · <a href="https://services.india.gov.in/" target="_blank" rel="noopener">National Government Services Portal</a></div>
+    <div class="footer-bottom">© 2026 EazyGovt · Made for citizens of India 🇮🇳</div>
+  </footer>
+
+  <dialog id="modal">
+    <div class="modal-inner"><button class="close" id="closeModal">×</button><h2 id="modalTitle">EazyGovt</h2><p id="modalText"></p><button class="btn primary" id="modalAction">Continue</button></div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
