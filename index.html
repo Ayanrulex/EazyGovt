@@ -63,15 +63,70 @@
         <div class="float-card two">🪪 <b>PAN Card</b><small>Apply / Update →</small></div>
         <div class="float-card three">📄 <b>Income Certificate</b><small>Check requirements →</small></div>
       </div>
-      <aside class="ai-card">
-        <div class="ai-head"><span class="bot">●</span><div><b>Meet your AI Assistant</b><small>Ask about government services</small></div></div>
-        <div class="chat">
-          <div class="bubble user">I want to renew my driving licence.</div>
-          <div class="bubble bot-bubble">Sure. I can help with that.<br>Which state are you applying in?</div>
-          <div class="state-pills"><button>Delhi</button><button>Maharashtra</button><button>Karnataka</button></div>
+      <aside class="ai-card eazy-ai-launcher">
+
+    <div class="ai-launcher-top">
+
+        <div class="ai-launcher-brand">
+
+            <div class="ai-launcher-avatar">
+                🤖
+            </div>
+
+            <div>
+                <b>EazyGovt AI</b>
+                <small>Government Service Guide</small>
+            </div>
+
         </div>
-        <button class="wide primary" id="chatBtn">💬 Start Chatting</button>
-      </aside>
+
+        <span class="ai-status">
+            <i></i> Ready
+        </span>
+
+    </div>
+
+
+    <div class="ai-launcher-content">
+
+        <span class="ai-kicker">
+            YOUR DIGITAL GUIDE
+        </span>
+
+        <h3>
+            What do you need help with?
+        </h3>
+
+        <p>
+            Tell me what you need and I'll help you find the right government service.
+        </p>
+
+        <button
+            type="button"
+            id="chatBtn"
+            class="ai-open-main"
+        >
+            <span>💬</span>
+            <strong>Ask EazyGovt AI</strong>
+            <span class="ai-arrow">→</span>
+        </button>
+
+    </div>
+
+
+    <div class="ai-launcher-footer">
+
+        <span>
+            🛡️ Official-source guidance
+        </span>
+
+        <span>
+            Free to use
+        </span>
+
+    </div>
+
+</aside>
     </section>
 
     <section class="stats">
@@ -153,8 +208,88 @@
   </footer>
 
   <dialog id="modal">
-    <div class="modal-inner"><button class="close" id="closeModal">×</button><h2 id="modalTitle">EazyGovt</h2><p id="modalText"></p><button class="btn primary" id="modalAction">Continue</button></div>
-  </dialog>
+    <div class="modal-inner">
+
+        <button class="close" id="closeModal" aria-label="Close">
+            ×
+        </button>
+
+        <div class="modal-header">
+            <div class="modal-service-icon" id="modalIcon">
+                🏛️
+            </div>
+
+            <div>
+                <p class="modal-eyebrow">GOVERNMENT SERVICE</p>
+                <h2 id="modalTitle">EazyGovt</h2>
+            </div>
+        </div>
+
+        <p class="modal-description" id="modalDescription"></p>
+
+        <div class="service-detail-grid">
+
+            <div class="detail-box">
+                <span class="detail-label">CATEGORY</span>
+                <strong id="modalCategory">Not specified</strong>
+            </div>
+
+            <div class="detail-box">
+                <span class="detail-label">DEPARTMENT</span>
+                <strong id="modalDepartment">Not specified</strong>
+            </div>
+
+            <div class="detail-box">
+                <span class="detail-label">PROCESSING TIME</span>
+                <strong id="modalProcessing">Varies by service</strong>
+            </div>
+
+            <div class="detail-box">
+                <span class="detail-label">FEES</span>
+                <strong id="modalFees">Varies by service</strong>
+            </div>
+
+        </div>
+
+        <section class="modal-section">
+            <h3>Eligibility</h3>
+            <div id="modalEligibility"></div>
+        </section>
+
+        <section class="modal-section">
+            <h3>Documents required</h3>
+            <div id="modalDocuments"></div>
+        </section>
+
+        <section class="modal-section">
+            <h3>How to apply</h3>
+            <p id="modalProcess"></p>
+        </section>
+
+        <section class="official-portal">
+            <div>
+                <span class="detail-label">OFFICIAL GOVERNMENT PORTAL</span>
+                <h3 id="modalPortalName">Official Portal</h3>
+            </div>
+
+            <a
+                id="modalPortalLink"
+                class="btn primary"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Official Portal →
+            </a>
+        </section>
+
+        <section class="modal-notice">
+            <strong>Important</strong>
+            <p id="modalNotes"></p>
+        </section>
+
+    </div>
+</dialog>
   <script src="app.js"></script>
 </body>
 </html>
